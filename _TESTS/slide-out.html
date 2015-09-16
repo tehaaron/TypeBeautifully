@@ -1,0 +1,88 @@
+<html>
+<head>
+<style>
+
+.clearfix:before,
+.clearfix:after {
+content: " ";
+display: table;
+}
+.clearfix:after {
+clear: both;
+}
+.clearfix {
+*zoom: 1;
+}
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+#slide-out-menu {
+	list-style-type: none;
+}
+
+#slide-out-menu li {
+	width: 75px;
+	height: 75px;
+	border: 1px solid black;
+  	display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-flex-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+#slide-out-menu h1 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#slide-out-menu h6 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<ul id="slide-out-menu" class="clearfix">
+  <li>
+  	<h1>F</h1>
+  	<h6>FONTS</h6>
+  </li>
+  <li>
+    <h1>D</h1>
+    <h6>DESIGNERS</h6>
+  </li>
+  <li>
+  	<h1>C</h1>
+  	<h6>CODE</h6>
+  </li>
+  <li>
+  	<h1>H</h1>
+  	<h6>HELP</h6>
+  </li>
+</ul>
+
+</body>
+
+</html>

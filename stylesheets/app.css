@@ -1,0 +1,345 @@
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Extra Resets
+:: Slide out Nav and Panel
+:: Style Unit
+:: App Styles
+:: Type Combos
+*/
+
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+/* -----------------------------------------
+   Slide out Nav and Panel
+----------------------------------------- */
+
+#slide-out-menu {
+  list-style-type: none;
+  position: fixed;
+  top: 64px;
+  right:0;
+  z-index: 3;
+  margin:0;
+}
+
+#slide-out-menu li a {
+  width: 75px;
+  height: 75px;
+  border: 1px solid black;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-flex-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+#slide-out-menu h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#slide-out-menu h6 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.panel {
+    position:fixed;
+    top:64px;
+    min-height: 306px;
+    right:-450px;
+    width:450px;
+    padding:20px;
+    border:1px solid black;
+    background-color:white;
+}
+
+/* -----------------------------------------
+   Style Unit
+----------------------------------------- */
+ul#styles-list {
+  list-style: none;
+}
+
+li.style-unit div:nth-of-type(1) {
+  display: block;
+  height: 30px;
+  padding:4px;
+  margin-bottom: 0px;
+  color:#fff;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #5bb75b;
+  *background-color: #51a351;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  background-repeat: repeat-x;
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  -webkit-border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-topright: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+
+li.style-unit div:nth-of-type(1) button {
+  float: right;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  border-radius: 11px;
+}
+
+li.style-unit div:nth-of-type(1) button:nth-of-type(2) {
+  margin-right:4px;
+}
+
+li.style-unit div:nth-of-type(2) {
+  padding: 4px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  background-color: #eeeeee;
+  -webkit-border-bottom-left-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -moz-border-radius-bottomright: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* -----------------------------------------
+   Style Unit's Accordian
+----------------------------------------- */
+
+
+
+/* -----------------------------------------
+   MISC
+----------------------------------------- */
+
+textarea#source-textarea {
+	resize: none;
+	border: 3px solid #cccccc;
+	height: 560px;
+	width: 100%;
+}
+.top14 {
+	margin-top: 14px;
+}
+#results {
+	min-height: 360px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display|Muli|Istok+Web|Lora|Bree+Serif|Open+Sans|Lobster|Arimo|Nixie+One|Ledger|Bevan|Pontano+Sans|Sansita+One|Kameron|Pacifico|Cantata+One|Imprima|Rancho|Gudea);
+
+/* -----------------------------------------
+   Text Style 1
+----------------------------------------- */
+.test1 h1 {font-family: 'Playfair Display', serif;}
+.test1 p {font-family: 'Muli', sans-serif;}
+/* -----------------------------------------
+   Text Style 2
+----------------------------------------- */
+.test2 h1 {font-family: 'Playfair Display', serif;}
+.test2 p {font-family: 'Muli', sans-serif; color:red;}
+/* -----------------------------------------
+   Text Style 3
+----------------------------------------- */
+.test3 h1 {font-family: 'Playfair Display', serif; color: blue;}
+.test3 p {font-family: 'Muli', sans-serif;}
+/* -----------------------------------------
+   Istok Web & Lora
+----------------------------------------- */
+  .istokweb-lora h1, .istokweb-lora h2 {
+    font: 400 70px/1.2 'Istok Web', Verdana, Helvetica, sans-serif;
+    margin-left: 70px;
+  }
+    .istokweb-lora h2 {
+      font-size: 17px;
+      word-spacing: 2px;
+    }
+  .istokweb-lora p {
+    font: 400 20px/1.6 'Lora', Georgia, serif;
+  }
+  .istokweb-lora blockquote {
+    margin: 80px 0 0 0;
+  }
+/* -----------------------------------------
+   Bree Serif & Open Sans
+----------------------------------------- */
+.breeserif-opensans h1, .breeserif-opensans h2 {
+    font: 400 87px/1.3 'Bree Serif', Georgia, serif;
+  }
+    .breeserif-opensans h2 {
+      font-size: 20px;
+    }
+  .breeserif-opensans p {
+    font: 400 17px/1.6 'Open Sans', Verdana, Helvetica, sans-serif;
+    text-align: right;
+  }
+  .breeserif-opensans blockquote {
+    margin: 30px 0 0 0;
+  }
+/* -----------------------------------------
+   Lobster & Arimo
+----------------------------------------- */
+  .lobster-arimo h1, .lobster-arimo h2 {
+    font: 400 95px/1.2 'Lobster', Georgia, serif;
+  }
+    .lobster-arimo h2 {
+      font-size: 20px;
+      margin-left: 110px;
+    }
+  .lobster-arimo p {
+    font: 400 17px/1.6 'Arimo', Verdana, Helvetica, sans-serif;
+    margin-left: 270px;
+  }
+  .lobster-arimo blockquote {
+    margin: 80px 0 0 0;
+  }
+/* -----------------------------------------
+   Nixie One & Ledger
+----------------------------------------- */
+ .nixieone-ledger h1, .nixieone-ledger h2 {
+    font: 400 70px/1.2 'Nixie One', Georgia, serif;
+  }
+    .nixieone-ledger h2 {
+      font-size: 25px;
+      text-align: right;
+    }
+  .nixieone-ledger p {
+    font: 400 20px/1.6 'Ledger', Garamond, Georgia, serif;
+  }
+  .nixieone-ledger blockquote {
+    margin: 80px 0 0 0;
+  }
+/* -----------------------------------------
+   Bevan & Pontano Sans
+----------------------------------------- */
+  .bevan-pontanosans h1 {
+    font: 400 25px/1.3 'Bevan', Georgia, serif;
+    text-align: right;
+  }
+  .bevan-pontanosans p {
+    font: 400 40px/1.6 'Pontano Sans', Verdana, Helvetica, sans-serif;
+    padding: 0 100px 20px 0;
+  }
+  .bevan-pontanosans blockquote {
+    margin: 30px 0 0 0;
+  }
+/* -----------------------------------------
+   Muli & Playfair Display
+----------------------------------------- */
+  .muli-playfairdisplay h1, .muli-playfairdisplay h2 {
+    font: 400 45px/1.5 'Muli', Verdana, Helvetica, sans-serif;
+  }
+    .muli-playfairdisplay h2 {
+      font-size: 14px;
+      text-align: right;
+    }
+  .muli-playfairdisplay p {
+    font: 400 75px/1.6 'Playfair Display', Georgia, serif;
+    text-align: center;
+  }
+    .muli-playfairdisplay p span {
+      font-size: 53px;
+    }
+  .muli-playfairdisplay blockquote {
+    margin: 60px 0 0 0;
+  }
+/* -----------------------------------------
+   Sansita One & Kameron
+----------------------------------------- */
+  .sansitaone-kameron h1, .sansitaone-kameron h2 {
+    font: 400 70px/1.2 'Sansita one', Georgia, serif;
+  }
+    .sansitaone-kameron h2 {
+      font-size: 17px;
+    }
+  .sansitaone-kameron p {
+    font: 400 20px/1.6 'Kameron', Georgia, serif;
+    text-align: right;
+  }
+  .sansitaone-kameron blockquote {
+    margin: 80px 0 0 0;
+  }
+/* -----------------------------------------
+   Pacifico & Arimo
+----------------------------------------- */
+  .pacifico-arimo h1, .pacifico-arimo h2 {
+    font: 400 95px/2 'Pacifico', Georgia, serif;
+    margin-left: -70px;
+  }
+    .pacifico-arimo h2 {
+      font-size: 22px;
+    }
+  .pacifico-arimo p {
+    font: 400 16px/1.7 'Arimo', Verdana, Helvetica, sans-serif;
+    text-align: right;
+  }
+  .pacifico-arimo blockquote {
+    margin: 80px 0 0 0;
+  }
+/* -----------------------------------------
+   Cantata One & Imprima
+----------------------------------------- */
+  .cantataone-imprima h1, .cantataone-imprima h2 {
+    font: 400 70px/1.2 'Cantata One', Georgia, serif;
+    text-align: right;
+  }
+    .cantataone-imprima h2 {
+      font-size: 16px;
+    }
+  .cantataone-imprima p {
+    font: 400 20px/1.6 'Imprima', Verdana, Helvetica, sans-serif;
+    margin-right: 250px;
+  }
+  .cantataone-imprima blockquote {
+    margin: 80px 0 0 0;
+  }
+/* -----------------------------------------
+   Rancho & Gudea
+----------------------------------------- */
+  .rancho-gudea h1, .rancho-gudea h2 {
+    font: 400 95px/1.2 'Rancho', Georgia, serif;
+  }
+    .rancho-gudea h2 {
+      font-size: 20px;
+      margin-left: 110px;
+    }
+  .rancho-gudea p {
+    font: 400 17px/1.6 'Gudea', Verdana, Helvetica, sans-serif;
+    margin-left: 270px;
+  }
+  .rancho-gudea blockquote {
+    margin: 80px 0 0 0;
+  }

@@ -1,0 +1,23 @@
+<!doctype html >
+<html>
+    <head>
+        <link rel="stylesheet" href="test.css" />
+        <script src="jquery.js"></script>
+        <script type="text/javascript">
+        $(window).load(function() {
+          $.ajax({
+              url: "./test.css",
+              dataType: "text",
+              success: function(cssText) {
+                  alert(cssText);// cssText will be a string containing the text of the file
+              }
+          });
+        });
+        </script>
+    </head>
+    <body>
+
+        <div></div>
+
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if IE]>
+     <style type="text/css">
+         .timer { display: none !important; }
+         div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
+    </style>
+<![endif]-->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Playfair+Display|Muli">
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Welcome to Foundation</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36405322-1']);
+  _gaq.push(['_setDomainName', 'typebeautiful.ly']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+	<div class="row">
+		<div id="primaryInput" class="ten columns">
+				<textarea id="textInput" class="top14"><h1>Guess What Grace?!</h1>
+<p>It works!...sorta</p>
+
+<h1>And...</h1>
+<p>It will support any html properties we design for!
+<br>...more to do...more to do.</p></textarea>
+		</div>
+		<div class="two columns" id="codeTest">
+				<h6>Markup Legend</h6>
+				<ul class="no-bullet">
+					<li>&lt;h1&gt;Header&lt;&#47;h1&gt;</li>
+					<li>&lt;p&gt;Paragraph&lt;&#47;p&gt;</li>
+				</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="twelve columns">
+			<div id="typographicStyles">
+				<div><a href="#" id="test1" class="success button">Style 1</a></div>
+				<div><a href="#" id="test2" class="success button">Style 2</a></div>
+				<div><a href="#" id="test3" class="success button">Style 3</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="twelve columns">
+			<div id="results"><p></p></div>	
+		</div>
+	</div>
+  <div class="row">
+    <div class="twelve columns">
+      <div class="code">
+        <a href="#" class="secondary button" data-reveal-id="myModal">Get CSS</a>
+      </div>
+    </div>
+  </div>
+
+<div id="myModal" class="reveal-modal [expand]">
+  <h2>Awesome. I have it.</h2>
+  <div id="cssReturn"></div>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<!-- Included JS Files (Compressed) -->
+<script src="javascripts/foundation.min.js"></script>
+  
+<!-- Initialize JS Plugins -->
+<script src="javascripts/texthandling.js"></script>
+<script src="javascripts/app.js"></script>
+<script type="text/javascript">
+   $(window).load(function() {
+       $('#typographicStyles').orbit({
+       	animationSpeed: 0,
+       	fluid: '12x2',
+       	timer: false
+       });
+      $("#buttonForModal").click(function() {
+        $("#myModal").reveal();
+      });
+   });
+</script>
+</body>
+</html>
